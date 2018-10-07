@@ -1,4 +1,5 @@
 import { printToDom } from "../helpers/util.js";
+import { condimentButtonEvent } from "../helpers/buttonEvents.js";
 
 let condiments = [];
 
@@ -29,6 +30,7 @@ const condimentsBuilder = () => {
     domString += `</div>`
     domString += `</div>`
   printToDom(domString, 'condimentDiv');
+  condimentButtonEvent();
 }
 
 export {setCondiments, getCondimentz, condimentsBuilder}

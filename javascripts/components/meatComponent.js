@@ -1,4 +1,5 @@
 import { printToDom } from "../helpers/util.js";
+import { meatButtonEvent } from "../helpers/buttonEvents.js";
 
 let meats = [];
 
@@ -29,6 +30,7 @@ const meatsBuilder = () => {
     domString += `</div>`
     domString += `</div>`
   printToDom(domString, 'meatDiv');
+  meatButtonEvent();
 }
 
 export {setMeats, getMeatz, meatsBuilder}

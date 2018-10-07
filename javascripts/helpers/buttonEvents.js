@@ -1,42 +1,36 @@
 import { cartBuilder } from "../components/cartComponent.js";
 
-// const condimentButton = document.getElementById("condimentButton");
-// const meatButton = document.getElementById("meatButton");
-// const veggieButton = document.getElementById("veggieButton");
-
-// const addNumberCaller = e => {
-//   addNumber(e.target.innerHTML);
-// };
-
 const breadButtonEvent = () => {
     const breadButton = document.getElementById("breadButton");
-    breadButton.addEventListener("click", cartBuilder);
+    breadButton.addEventListener("click", () => {
+        console.log('I clicked bread')
+    });
 };
 
 const cheeseButtonEvent = () => {
     const cheeseButton = document.getElementById("cheeseButton");
-    cheeseButton.addEventListener("click", cartBuilder);
+    cheeseButton.addEventListener("click", () => {
+        console.log('I clicked cheese')
+    });
 };
 
-// const condimentButtonEvent = () => {
-//   condimentButton.addEventListener("click", addNumberCaller);
-// };
-
-
-// const meatButtonEvent = () => {
-//   meatButton.addEventListener("click", addNumberCaller);
-// };
-
-// const veggieButtonEvent = () => {
-//   veggieButton.addEventListener("click", addNumberCaller);
-// };
-
-const attachEvents = () => {
-  breadButtonEvent();
-  cheeseButtonEvent();
-//   condimentButtonEvent();
-//   meatButtonEvent();
-//   veggieButtonEvent();
+const condimentButtonEvent = () => {
+  condimentButton.addEventListener("click", () => {
+  console.log("i clicked condiments")
+});
 };
 
-export { attachEvents };
+
+const meatButtonEvent = () => {
+  meatButton.addEventListener("click", () => {
+      console.log('i clicked meat!')
+  });
+};
+
+const veggieButtonEvent = () => {
+  veggieButton.addEventListener("click", () => {
+      console.log('i clicked veggie!')
+  });
+};
+
+export { breadButtonEvent, cheeseButtonEvent, condimentButtonEvent, meatButtonEvent, veggieButtonEvent };

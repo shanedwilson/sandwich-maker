@@ -1,5 +1,5 @@
 import { printToDom } from "../helpers/util.js";
-import { attachEvents } from "../helpers/buttonEvents.js"
+import { cheeseButtonEvent } from "../helpers/buttonEvents.js";
 
 let cheeses = [];
 
@@ -30,7 +30,7 @@ const cheesesBuilder = () => {
     domString += `</div>`
     domString += `</div>`
   printToDom(domString, 'cheeseDiv');
-  attachEvents();
+  cheeseButtonEvent();
 }
 
 export {setCheeses, getCheesez, cheesesBuilder}

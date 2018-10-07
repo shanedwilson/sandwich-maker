@@ -1,4 +1,5 @@
 import { printToDom } from "../helpers/util.js";
+import { veggieButtonEvent } from "../helpers/buttonEvents.js";
 
 let veggies = [];
 
@@ -29,6 +30,7 @@ const veggiesBuilder = () => {
     domString += `</div>`
     domString += `</div>`
   printToDom(domString, 'veggieDiv');
+  veggieButtonEvent();
 }
 
 export {setVeggies, getVeggiez, veggiesBuilder}
