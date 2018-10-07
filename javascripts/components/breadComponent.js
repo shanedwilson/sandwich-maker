@@ -37,11 +37,13 @@ const addBread = () => {
   let breadChecks = document.getElementsByClassName('breadCheck');
   for (let i = 0; i< breadChecks.length; i++) {
     if (breadChecks[i].checked) {
-      console.log(breadChecks[i].value);
-    }
-    // let breadCheck = breadChecks[i].value;
+      const selectedBread = breads.filter(function (el) {
+        return (el.type === breadChecks[i].value);
+    });
+    console.log(selectedBread);
 
-    // const chosenBreads = breads.filter(x => x.type === breadCheck);
+    }
+
   }
 };
 
