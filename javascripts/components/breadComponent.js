@@ -1,4 +1,5 @@
 import { printToDom } from "../helpers/util.js";
+import { breadButtonEvent } from "../helpers/buttonEvents.js";
 
 let breads = [];
 
@@ -19,16 +20,19 @@ const breadsBuilder = () => {
     domString += `<h5 class="card-title text-center">Breads</h5>`
     domString += `<p class="card-text text-center">Please select your bread choice.</p>`
     breads.forEach(bread => {
-      domString += `<input id="checkbox${counter}"type="checkbox" name="bread" value="${bread.type}"> ${bread.type}<br>`
+      domString += `<input class="breadCheck" id="checkbox${counter}" type="checkbox" name="bread" value="${bread.type}"> ${bread.type}<br>`
       counter ++
     });
     domString += `<div class="text-center mt-auto">`
-    domString += `<button type="button" class="btn btn-secondary">Add To Sammie</button>`
+    domString += `<button type="button" class="btn btn-secondary" id="breadButton">Add To Sammie</button>`
     domString += `</div>`
     domString += `</div>`
     domString += `</div>`
     domString += `</div>`
   printToDom(domString, 'breadDiv');
+  breadButtonEvent();
 };
+
+const addBread
 
 export {setBreads, getBreadz, breadsBuilder}

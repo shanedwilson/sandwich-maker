@@ -1,1 +1,5 @@
-console.log('cartComponent');
+const cartBuilder = () => {
+    
+}
+
+export {cartBuilder}

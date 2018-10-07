@@ -1,4 +1,5 @@
 import { printToDom } from "../helpers/util.js";
+import { veggieButtonEvent } from "../helpers/buttonEvents.js";
 
 let veggies = [];
 
@@ -23,12 +24,13 @@ const veggiesBuilder = () => {
       counter ++;
     });
     domString += `<div class="text-center mt-auto">`
-    domString += `<button type="button" class="btn btn-secondary">Add To Sammie</button>`
+    domString += `<button type="button" class="btn btn-secondary" id="veggieButton">Add To Sammie</button>`
     domString += `</div>`
     domString += `</div>`
     domString += `</div>`
     domString += `</div>`
   printToDom(domString, 'veggieDiv');
+  veggieButtonEvent();
 }
 
 export {setVeggies, getVeggiez, veggiesBuilder}
