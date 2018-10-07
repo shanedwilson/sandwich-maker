@@ -1,11 +1,15 @@
-import { cartBuilder } from "../components/cartComponent.js";
 import { addBread } from "../components/breadComponent.js";
+import { addMeat } from "../components/meatComponent.js";
+import { addCheese } from "../components/cheeseComponent.js";
+import { addCondiment } from "../components/condimentComponent.js";
+import { addVeggie } from "../components/veggieComponent.js";
 
 
-const breadButtonEvent = (chosenBreads) => {
+
+
+const breadButtonEvent = () => {
     const breadButton = document.getElementById("breadButton");
     breadButton.addEventListener("click", () => {
-        console.log('i clicked breads!');
         addBread();
     });
 };
@@ -13,26 +17,27 @@ const breadButtonEvent = (chosenBreads) => {
 const cheeseButtonEvent = () => {
     const cheeseButton = document.getElementById("cheeseButton");
     cheeseButton.addEventListener("click", () => {
-        console.log('I clicked cheese')
+        addCheese();
     });
 };
 
 const condimentButtonEvent = () => {
+    const condimentButton = document.getElementById("condimentButton");
   condimentButton.addEventListener("click", () => {
-  console.log("i clicked condiments")
+        addCondiment();
 });
 };
 
 
 const meatButtonEvent = () => {
   meatButton.addEventListener("click", () => {
-      console.log('i clicked meat!')
+      addMeat();
   });
 };
 
 const veggieButtonEvent = () => {
   veggieButton.addEventListener("click", () => {
-      console.log('i clicked veggie!')
+      addVeggie();
   });
 };
 
