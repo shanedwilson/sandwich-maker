@@ -44,7 +44,6 @@ const addCondiment = () => {
         return condiments.type === condimentChecks[i].value;
       });
       cartBuilder(selectedCondiments);
-      console.log(selectedCondiments);
     }
   }
 };

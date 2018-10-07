@@ -44,7 +44,6 @@ const addVeggie = () => {
         return veggies.type === veggieChecks[i].value;
       });
       cartBuilder(selectedVeggies);
-      console.log(selectedVeggies);
     }
   }
 };

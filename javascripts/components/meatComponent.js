@@ -40,11 +40,9 @@ const addMeat = () => {
   let meatChecks = document.getElementsByClassName("meatCheck");
   for (let i = 0; i < meatChecks.length; i++) {
     if (meatChecks[i].checked) {
-      console.log(meatChecks[i].value);
       const selectedMeats = meats.filter(function(meats) {
         return meats.type === meatChecks[i].value;
       });
-      console.log(selectedMeats);
       cartBuilder(selectedMeats);
     }
   }
