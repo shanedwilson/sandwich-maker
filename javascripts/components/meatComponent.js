@@ -1,3 +1,5 @@
+import { printToDom } from "../helpers/util.js";
+
 let meats = [];
 
 const setMeats = newArray => {
@@ -9,7 +11,22 @@ const getMeatz = () => {
 };
 
 const meatsBuilder = () => {
-
+  let domString = "";
+    domString += `<div class="col">`
+    domString += `<div class="card border-dark h-100" style="width: 18rem;">`
+    domString += `<div class="card-body h-100">`
+    domString += `<h5 class="card-title text-center">Meats</h5>`
+    domString += `<p class="card-text text-center">Please select your meat choice.</p>`
+    meats.forEach(meat => {
+    domString += `<input type="radio" name="bread" value="white"> ${meat.type}<br>`
+    });
+    domString += `<div class="text-center mt-auto">`
+    domString += `<button type="button" class="btn btn-secondary">Add To Sammie</button>`
+    domString += `</div>`
+    domString += `</div>`
+    domString += `</div>`
+    domString += `</div>`
+  printToDom(domString, 'meatDiv');
 }
 
 export {setMeats, getMeatz, meatsBuilder}
