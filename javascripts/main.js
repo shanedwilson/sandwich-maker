@@ -3,10 +3,7 @@ import { getCheeses } from './data/cheeseData.js';
 import { getCondiments } from './data/condimentData.js';
 import { getMeats } from './data/meatData.js';
 import { getVeggies } from './data/veggieData.js';
-import { breadsBuilder } from './components/breadComponent.js';
-
-
-// import { sortEvents } from './events.js';
+// import { attachEvents } from './helpers/buttonEvents.js';
 
 const initializeApp = () => {
     getBreads();
@@ -14,7 +11,7 @@ const initializeApp = () => {
     getCondiments();
     getMeats();
     getVeggies();
-    // sortEvents();
+    // attachEvents();
 };
 
 initializeApp();

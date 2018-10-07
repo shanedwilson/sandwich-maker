@@ -1,4 +1,5 @@
 import { printToDom } from "../helpers/util.js";
+import { attachEvents } from "../helpers/buttonEvents.js";
 
 let breads = [];
 
@@ -23,12 +24,15 @@ const breadsBuilder = () => {
       counter ++
     });
     domString += `<div class="text-center mt-auto">`
-    domString += `<button type="button" class="btn btn-secondary">Add To Sammie</button>`
+    domString += `<button type="button" class="btn btn-secondary" id="breadButton">Add To Sammie</button>`
     domString += `</div>`
     domString += `</div>`
     domString += `</div>`
     domString += `</div>`
   printToDom(domString, 'breadDiv');
+  attachEvents();
 };
+
+
 
 export {setBreads, getBreadz, breadsBuilder}

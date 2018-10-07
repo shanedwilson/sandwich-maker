@@ -23,7 +23,7 @@ const meatsBuilder = () => {
     counter++;
     });
     domString += `<div class="text-center mt-auto">`
-    domString += `<button type="button" class="btn btn-secondary">Add To Sammie</button>`
+    domString += `<button type="button" class="btn btn-secondary" id="meatButton">Add To Sammie</button>`
     domString += `</div>`
     domString += `</div>`
     domString += `</div>`
