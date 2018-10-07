@@ -33,6 +33,16 @@ const breadsBuilder = () => {
   breadButtonEvent();
 };
 
-const addBread
+const addBread = () => {
+  let breadChecks = document.getElementsByClassName('breadCheck');
+  for (let i = 0; i< breadChecks.length; i++) {
+    if (breadChecks[i].checked) {
+      console.log(breadChecks[i].value);
+    }
+    // let breadCheck = breadChecks[i].value;
 
-export {setBreads, getBreadz, breadsBuilder}
+    // const chosenBreads = breads.filter(x => x.type === breadCheck);
+  }
+};
+
+export {setBreads, getBreadz, breadsBuilder, addBread}

@@ -1,9 +1,12 @@
 import { cartBuilder } from "../components/cartComponent.js";
+import { addBread } from "../components/breadComponent.js";
 
-const breadButtonEvent = () => {
+
+const breadButtonEvent = (chosenBreads) => {
     const breadButton = document.getElementById("breadButton");
     breadButton.addEventListener("click", () => {
-        console.log('I clicked bread')
+        console.log('i clicked breads!');
+        addBread();
     });
 };
 
