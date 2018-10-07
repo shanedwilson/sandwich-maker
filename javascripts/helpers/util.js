@@ -3,4 +3,9 @@ const printToDom = (stringToPrint, elementId) => {
     selectedDiv.innerHTML = stringToPrint;
 };
 
-export {printToDom}
+const cartToDom = (stringToPrint, elementId) => {
+    const selectedDiv = document.getElementById(elementId);
+    selectedDiv.innerHTML += stringToPrint;
+};
+
+export {printToDom, cartToDom}

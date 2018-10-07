@@ -1,5 +1,6 @@
 import { printToDom } from "../helpers/util.js";
 import { breadButtonEvent } from "../helpers/buttonEvents.js";
+import {cartBuilder} from "./cartComponent.js"
 
 let breads = [];
 
@@ -33,17 +34,17 @@ const breadsBuilder = () => {
   breadButtonEvent();
 };
 
+
 const addBread = () => {
   let breadChecks = document.getElementsByClassName('breadCheck');
   for (let i = 0; i< breadChecks.length; i++) {
     if (breadChecks[i].checked) {
-      const selectedBread = breads.filter(function (el) {
-        return (el.type === breadChecks[i].value);
+      const selectedBreads = breads.filter(function (breads) {
+        return (breads.type === breadChecks[i].value);
     });
-    console.log(selectedBread);
-
+    console.log(selectedBreads);
+    cartBuilder(selectedBreads);
     }
-
   }
 };
 
