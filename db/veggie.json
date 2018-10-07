@@ -1,0 +1,24 @@
+{
+    "veggies": [
+        {
+            "type": "lettuce",
+            "price": 0.25
+        },
+
+        {
+            "type": "tomato",
+            "price": 0.35 
+        },
+
+        {
+            "type": "onion",
+            "price": 0.35
+        },
+
+        {
+            "type": "none",
+            "price": 0.00
+        }
+    
+    ]
+}

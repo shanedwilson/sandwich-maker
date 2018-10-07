@@ -1,0 +1,24 @@
+{
+    "meats": [
+        {
+            "type": "ham",
+            "price": 1.50
+        },
+
+        {
+            "type": "turkey",
+            "price": 1.25
+        },
+
+        {
+            "type": "roast beef",
+            "price": 1.75
+        },
+
+        {
+            "type": "none",
+            "price": 0.00
+        }
+    
+    ]
+}

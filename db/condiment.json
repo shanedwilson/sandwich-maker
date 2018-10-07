@@ -1,0 +1,24 @@
+{
+    "condiments": [
+        {
+            "type": "mustard",
+            "price": 0.10
+        },
+
+        {
+            "type": "mayo",
+            "price": 0.15 
+        },
+
+        {
+            "type": "miracle whip",
+            "price": 0.10
+        },
+
+        {
+            "type": "none",
+            "price": 0.00
+        }
+    
+    ]
+}
