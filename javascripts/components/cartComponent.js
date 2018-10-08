@@ -5,6 +5,7 @@ let total = 0;
 const cartBuilder = newArray => {
   let newString = "";
   for (let i = 0; i < newArray.length; i++) {
+    newString += `<div class="row h-100 justify-content-center align-items-center">`;
     newString += `<div class="col-md-4">`;
     newString += `<div class="card" style="width: 18rem;">`;
     newString += `<div class="card-body">`;

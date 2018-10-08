@@ -11,3 +11,10 @@ h1 {
 #orderTitle{
     text-align: center;
 }
+
+#cartTotal {
+    text-align: center;
+    background-color: white;
+    width: 30%;
+    margin: auto;
+}
