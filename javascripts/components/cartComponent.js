@@ -16,7 +16,7 @@ const cartBuilder = newArray => {
     newString += `<div>`;
     newString += `</div>`;
     newString += `</div>`;
-    total += newArray[i].price;
+    total += parseFloat(newArray[i].price);
   }
   cartToDom(newString, "cartDiv");
   printToDom(`Total: $${total}`, "cartTotal");

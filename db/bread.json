@@ -2,22 +2,22 @@
     "breads": [
         {
             "type": "white",
-            "price": 0.75
+            "price": "0.75"
         },
 
         {
             "type": "wheat",
-            "price": 1.00 
+            "price": "1.00" 
         },
 
         {
             "type": "rye",
-            "price": 1.25
+            "price": "1.25"
         },
 
         {
             "type": "none",
-            "price": 0.00
+            "price": "0.00"
         }
     
     ]
