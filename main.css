@@ -1,11 +1,14 @@
 body {
-    background-image: radial-gradient(red, yellow, blue);
-    background-attachment: fixed
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+    url('https://s3.amazonaws.com/millworksharrisburg-media/wp-content/uploads/2014/09/18225512/wood-wall.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1 {
     text-align: center;
     font-size: 4em;
+    text-shadow: -1px 0 rgb(172, 94, 30), 0 1px rgb(172, 94, 30), 1px 0 rgb(172, 94, 30), 0 -1px rgb(172, 94, 30);
 }
 
 #orderTitle{
